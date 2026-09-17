@@ -1,33 +1,23 @@
-# Python cache
+# Ignore actual datasets
+data/raw/*
+data/cleaned/*
+
+# Keep documentation
+!data/dataset_card.md
+
+# Keep empty directory placeholders if used
+!data/raw/.gitkeep
+!data/cleaned/.gitkeep
+
+# Python
 __pycache__/
 *.pyc
-*.pyo
-
-# Virtual environments
-venv/
 .venv/
+venv/
 
-# Environment variables / secrets
+# Secrets
 .env
 .env.*
 
-# Datasets
-data/
-*.csv
-
-# Jupyter
-.ipynb_checkpoints/
-
 # macOS
 .DS_Store
-
-# VS Code
-.vscode/
-
-# PyCharm
-.idea/
-
-# Python package/build files
-build/
-dist/
-*.egg-info/
